@@ -49,6 +49,9 @@ body{
     flex-direction: row;
     padding: 1vh;
 }
+.navbar h1, a{
+    user-select: none;
+}
 ul{
     margin-left: auto;
     margin-right: 2vw;
