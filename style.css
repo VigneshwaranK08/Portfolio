@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap');
 
 :root{
     --bg-color: #ececec;
@@ -25,11 +27,14 @@ font-family: "Barlow", sans-serif;
 font-family: "Cormorant Infant", serif;
 font-family: "Luxurious Roman", serif;
 font-family: "Abhaya Libre", serif;
+font-family: "Maitree", serif;
+font-family: "Lemonada", cursive;
 
 */
 *{
     z-index: 1;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-color);
@@ -39,6 +44,8 @@ body{
 }
 
 .navbar{
+    background-color: var(--bg-color);
+    z-index: 3;
     font-family: "Luxurious Roman", serif;
     position: fixed;
     align-items: center;
@@ -147,6 +154,7 @@ a{
     font-family: 'Kaushan Script','cursive';
     color: var(--dark-text);
     font-size: 96px;
+    margin: 0;
 }
 .subtitle{
     color: var(--light-text);
@@ -155,8 +163,7 @@ a{
     font-size: 32px;
 }
 span.highlight{
-    font-family: "Luxurious Roman", serif, cursive;
-    font-weight: 700;
+    font-family: "Lemonada", cursive;
     font-size: 32px;
     color: var(--dark-text);
 }
@@ -194,4 +201,83 @@ span.highlight{
     position: absolute; 
     width: 120px; 
     height: auto;
+}
+
+.aboutme{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme .title{
+    font-size: 75px;
+}
+.content{
+    height: 80vh;
+    width: 85vw;
+}
+h2.subtitle{
+    font-size: 35px;
+    color: var(--light-text);
+    font-family: "Lemonada", cursive;
+    margin-bottom: 0.5vh;
+}
+.overview{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+p.subtitle{
+    overflow: hidden;
+    font-size: 32px;
+    font-family: "Maitree", serif;
+    line-height: 140%;
+}
+.skillname{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    margin-left: 1.5vw;
+    width: fit-content;
+    color: var(--dark-text);
+    font-family: "Maitree", serif;
+    font-size: 16px;
+    letter-spacing: 2%;
+    font-weight: 450;
+}
+.skilldetail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vh;
+    margin-left: auto;
+    margin-right: 5vw;
+    color: var(--light-text);
+}
+.bars{
+    display: flex;
+    flex-direction: column;
+    gap: 5.7vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.skillbar{
+    height: 1vh;
+    background-color: var(--sec-light);
+    width: 65vw;
+    margin: auto;
+    border-radius: 2vh;
+}
+.skillprog{
+    height: 1vh;
+    border-radius: 2vh;
+    background-color: var(--light-text);
+}
+.skillprog.o{
+    width: calc(0.65*65vw);
+}
+.skillprog.t{
+    width: calc(0.35*65vw);
+}
+.skillprog.th{
+    width: calc(0.5*65vw);
 }
