@@ -29,6 +29,7 @@ font-family: "Abhaya Libre", serif;
 */
 *{
     z-index: 1;
+    overflow-x: hidden;
 }
 body{
     background-color: var(--bg-color);
@@ -39,6 +40,7 @@ body{
 
 .navbar{
     font-family: "Luxurious Roman", serif;
+    position: fixed;
     align-items: center;
     font-weight: 450;
     font-size: 2vh;
@@ -109,7 +111,7 @@ a{
     z-index: 2;
     position: absolute;
     top: 6.5vh;
-    right: 23.6vw;
+    right: 24.7vw;
     height: .65vh;
     width: 4.25vw;
     background-color: var(--light-text);
@@ -124,3 +126,72 @@ a{
     transform: translateX(15vw) skew(50deg);
     width: 5.8vw;
 }  */
+
+.maincontent{
+    height: 93vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 13vw;
+}
+.introtext{
+    box-sizing: content-box;
+    padding: 2vh;
+    margin-left: 10vw;
+    margin-top: -13vh;
+    flex-wrap: wrap;
+    width: 35vw;
+}
+.title{
+    font-family: 'Kaushan Script','cursive';
+    color: var(--dark-text);
+    font-size: 96px;
+}
+.subtitle{
+    color: var(--light-text);
+    font-family: "Barlow", sans-serif, cursive;
+    font-weight: 250;
+    font-size: 32px;
+}
+span.highlight{
+    font-family: "Luxurious Roman", serif, cursive;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--dark-text);
+}
+.outside,.middle,.inside{
+    z-index: 1;
+    background-color: var(--sec-dark);
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.middle{
+    z-index: 2;
+    background-color: var(--light-text);
+    width: 550px;
+    height: 550px;
+}
+.inside{
+    z-index: 3;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: var(--dark-text);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.inside img{
+    height: 55px;
+    filter: invert(100%) sepia(6%) saturate(1327%) hue-rotate(188deg) brightness(114%) contrast(85%);
+}
+.skill {
+    position: absolute; 
+    width: 120px; 
+    height: auto;
+}
