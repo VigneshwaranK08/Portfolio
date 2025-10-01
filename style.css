@@ -12,8 +12,106 @@
     --sec-light: #d9d9d9;
 }
 
+/*
+
+font-family: 'Kaushan Script','cursive';
+font-family: "Barlow", sans-serif;
+font-family: "Cormorant Infant", serif;
+font-family: "Luxurious Roman", serif;
+font-family: "Abhaya Libre", serif;
+
+*/
+*{
+    z-index: 1;
+}
 body{
     background-color: var(--bg-color);
-    font-family: 'Kaushan Script','cursive';
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    font-family: "Luxurious Roman", serif;
+    align-items: center;
+    font-weight: 450;
+    font-size: 2vh;
+    width: 100vw;
+    height: 7vh;
+    border: 2px solid var(--sec-light);
+    display: flex;
+    flex-direction: row;
+    padding: 1vh;
+}
+ul{
+    margin-left: auto;
+    margin-right: 2vw;
+    list-style: none;
+    display: flex;
+    font-weight: 450;
+    font-size: 2.3vh;
+    gap: 2.5vw;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
     color: var(--dark-text);
 }
+.themebox{
+    width: 7vw;
+    height: 6.78vh;
+    border: 2px solid var(--sec-light);
+    margin-right: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1vw;
+}
+.activebox, .notactivebox{
+    border-radius: 1vw;
+    background-color: #292929;
+    height: 6.78vh;
+    width: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right:0.25vw;
+    cursor: pointer;
+}
+.activebox .lightheme{
+    filter: invert(100%) sepia(6%) saturate(1327%) hue-rotate(188deg) brightness(114%) contrast(85%);
+    
+}
+.themebox img{
+    max-height: 4.2vh;
+}
+.notactivebox{
+    background-color: var(--bg-color);
+    margin-left: auto;
+    margin-right: 0;
+}
+.indicator{
+    z-index: 2;
+    position: absolute;
+    top: 6.5vh;
+    right: 23.6vw;
+    height: .65vh;
+    width: 4.25vw;
+    background-color: var(--light-text);
+    transform: skewX(-50deg);
+}
+/*
+.indicator{
+    transform: translateX(7.7vw) ;
+    width: 6.2vw;
+}
+.indicator{
+    transform: translateX(15vw) skew(50deg);
+    width: 5.8vw;
+}  */
