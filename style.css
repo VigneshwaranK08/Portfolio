@@ -11,7 +11,13 @@
     --sec-dark: #7e7e7e;
     --sec-light: #d9d9d9;
 }
-
+.darktheme{
+    --bg-color: #292929;
+    --dark-text: #ececec; 
+    --light-text: #d9d9d9;
+    --sec-dark: #444444;
+    --sec-light: #7e7e7e;
+}
 /*
 
 font-family: 'Kaushan Script','cursive';
@@ -38,7 +44,7 @@ body{
     font-size: 2vh;
     width: 100vw;
     height: 7vh;
-    border: 2px solid var(--sec-light);
+    border-bottom: 1px solid var(--sec-light);
     display: flex;
     flex-direction: row;
     padding: 1vh;
@@ -65,7 +71,7 @@ a{
 .themebox{
     width: 7vw;
     height: 6.78vh;
-    border: 2px solid var(--sec-light);
+    border: 1px solid var(--sec-light);
     margin-right: 1vw;
     display: flex;
     align-items: center;
