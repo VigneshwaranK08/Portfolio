@@ -34,7 +34,6 @@ font-family: "Lemonada", cursive;
 *{
     z-index: 1;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 body{
     background-color: var(--bg-color);
@@ -42,6 +41,7 @@ body{
     margin: 0;
     padding: 0;
     transition: background-color 0.5s ease, color 0.5s ease;
+    scroll-behavior: smooth;
 }
 
 .navbar{
@@ -125,6 +125,7 @@ a{
     width: 4.25vw;
     background-color: var(--light-text);
     transform: skewX(-50deg);
+    transition: all 0.5s ease;
 }
 /*
 .indicator{

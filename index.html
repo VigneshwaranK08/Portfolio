@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-    <script src="./script.js"></script>
     <title>Portfolio</title>
 </head>
 <body class="">
@@ -13,9 +11,9 @@
         <h1>Portfolio</h1>
         <div class="indicator"></div>
         <ul class="links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
         <div class="themebox">
@@ -32,7 +30,7 @@
 
     <!-- Main Content -->
 
-    <div class="maincontent">
+    <section class="maincontent" id="home">
         <div class="introtext">
             <h1 class="title">Hello !</h1>
             <p class="subtitle"><span class="highlight">I’m Vigneshwaran K - </span> first-year engineering student exploring design, Innovation and web technologies</p>
@@ -52,10 +50,10 @@
             
             
         </div>
-    </div>
+    </section>
 
     <!-- about me content -->
-     <div class="aboutme">
+     <section class="aboutme" id="aboutme">
         <div class="content">
             <h1 class="title">About Me</h1>
             <p class="subtitle">I enjoy figuring out how to turn concepts into something practical. I'm currently immersed in web design and programming; Python is my strong suit, and I'm experimenting with JavaScript to make websites come to life.<br>I like learning new tools. For me, coding is about making experiences that are enjoyable and intuitive, not just about syntax.</p>
@@ -81,9 +79,9 @@
                 </div>
             </div>
         </div>
-     </div>
+     </section>
 
-     <div class="contact">
+     <section class="contact" id="contact">
         <div class="content">
             <h1 class="title">Get In Touch</h1>
             <p class="text">“I’m always open to new ideas, collaborations, or opportunities to learn and grow.<br> You can reach me through the links below”</p>
@@ -97,20 +95,23 @@
                 <div class="linktext">
                     <div class="textinfo">
                         <h1 class="linktitle">Github</h1>
-                        <p class="info"><a href="">VigneshwaranK08</a></p>
+                        <p class="info"><a href="https://github.com/VigneshwaranK08" target="_blank">VigneshwaranK08</a></p>
                     </div>
                     <div class="textinfo">
                         <h1 class="linktitle">LinkedIn</h1>
-                        <p class="info"><a href="">Vigneshwaran Karthikeyan</a></p>
+                        <p class="info"><a href="https://linkedin.com/in/VigneshwaranK08" target="_blank">Vigneshwaran Karthikeyan</a></p>
                     </div>
                     <div class="textinfo">
                         <h1 class="linktitle">Email</h1>
-                        <p class="info"><a href="">vigneshwaran.karthikeyan.08@gmail.com</a></p>
+                        <p class="info"><a href="mailto:vigneshwaran.karthikeyan.08@gmail.com" target="_blank">vigneshwaran.karthikeyan.08@gmail.com</a></p>
                     </div>
                 </div>
             </div>
         </div>
-     </div>
+     </section>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js" ></script>
+    <script src="./script.js" ></script>
 
 </body>
 </html>
