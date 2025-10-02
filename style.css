@@ -13,7 +13,7 @@
     --sec-dark: #7e7e7e;
     --sec-light: #d9d9d9;
 }
-.darktheme{
+.dark{
     --bg-color: #292929;
     --dark-text: #ececec; 
     --light-text: #d9d9d9;
@@ -171,7 +171,7 @@ span.highlight{
 }
 .outside,.middle,.inside{
     z-index: 1;
-    background-color: var(--sec-dark);
+    background-color: #7e7e7e;
     width: 600px;
     height: 600px;
     display: flex;
@@ -181,7 +181,7 @@ span.highlight{
 }
 .middle{
     z-index: 2;
-    background-color: var(--light-text);
+    background-color: #444444;
     width: 550px;
     height: 550px;
 }
@@ -190,7 +190,7 @@ span.highlight{
     position: relative;
     width: 500px;
     height: 500px;
-    background-color: var(--dark-text);
+    background-color: #292929;
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -345,4 +345,18 @@ p.subtitle{
     font-style: italic;
     color: var(--sec-dark);
 
+}
+
+.dark .linkicon img{
+    filter: invert(100%) sepia(6%) saturate(1327%) hue-rotate(188deg) brightness(114%) contrast(85%);
+}
+
+.dark .notactivebox{
+    background-color: var(--dark-text);
+}
+.dark .linktext .textinfo p.info a{
+    color: var(--light-text);
+}
+.dark .contact .content p.text{
+    color: var(--light-text);
 }
