@@ -67,14 +67,15 @@ const links = document.querySelectorAll(".links a");
 const indicator = document.querySelector(".indicator");
 
 function moveIndicator() {
-  let scrollPos = window.scrollY + window.innerHeight / 2;
+  let scrollPos = window.scrollY + window.innerHeight / 2;  // innerHeight - height of the browser otr the windowa
 
   sections.forEach((section, index) => {
     const top = section.offsetTop;
-    const bottom = top + section.offsetHeight;
+    const bottom = top + section.offsetHeight;  // ead-only property of the HTMLElement interface returns the height of an element, including vertical padding and borders, as an integer.
 
     if (scrollPos >= top && scrollPos < bottom) {
-      indicator.style.transform =  "translateX(" + 7.0*index + "vw) skewX(" + 45 * (index - 1) + "deg)" ;
+      indicator.style.transform =  "translateX(" + 7.0 * (index === 1 ? 1.05 : index) + "vw) skewX(" + 45 * (index - 1) + "deg)" ;
+      indicator.style.width = (index === 1 ? 5.3 : 4.25) + 'vw'
     }
   });
 }
