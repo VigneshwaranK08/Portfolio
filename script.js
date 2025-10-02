@@ -33,3 +33,19 @@ window.addEventListener("load", function() {
 
   animate();
 });
+
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '120px',
+  duration: 2000,
+  delay: 300,
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    sr.reveal('.introtext',{duration: 2500,delay:100})
+    sr.reveal('.skillcircles',{origin: 'bottom'})
+    sr.reveal('.content .title',{origin: 'left', distance: '150px', delay: 150})
+    sr.reveal('.content p.subtitle',{origin: 'right', distance: '150px', delay: 150})
+    sr.reveal('.content .overview',{origin: 'left', distance: '300px', delay: 150})
+
+})
