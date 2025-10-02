@@ -41,6 +41,7 @@ body{
     color: var(--dark-text);
     margin: 0;
     padding: 0;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .navbar{
@@ -91,7 +92,7 @@ a{
     justify-content: space-between;
     border-radius: 1vw;
 }
-.activebox, .notactivebox{
+.lightbox, .darkbox{
     border-radius: 1vw;
     background-color: #292929;
     height: 6.78vh;
@@ -103,14 +104,14 @@ a{
     margin-right:0.25vw;
     cursor: pointer;
 }
-.activebox .lightheme{
+.lightbox .lightheme{
     filter: invert(100%) sepia(6%) saturate(1327%) hue-rotate(188deg) brightness(114%) contrast(85%);
     
 }
 .themebox img{
     max-height: 4.2vh;
 }
-.notactivebox{
+.darkbox{
     background-color: var(--bg-color);
     margin-left: auto;
     margin-right: 0;
@@ -351,7 +352,7 @@ p.subtitle{
     filter: invert(100%) sepia(6%) saturate(1327%) hue-rotate(188deg) brightness(114%) contrast(85%);
 }
 
-.dark .notactivebox{
+.dark .darkbox{
     background-color: var(--dark-text);
 }
 .dark .linktext .textinfo p.info a{
