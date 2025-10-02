@@ -44,6 +44,7 @@ body{
 }
 
 .navbar{
+    overflow: hidden;
     background-color: var(--bg-color);
     z-index: 3;
     font-family: "Luxurious Roman", serif;
@@ -135,6 +136,7 @@ a{
 }  */
 
 .maincontent{
+    margin-top: 7vh;
     height: 93vh;
     width: 100vw;
     display: flex;
@@ -204,7 +206,7 @@ span.highlight{
 }
 
 .aboutme{
-    height: 100vh;
+    height: 84vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,4 +282,67 @@ p.subtitle{
 }
 .skillprog.th{
     width: calc(0.5*65vw);
+}
+
+
+.contact{
+    height: 100vh;
+}
+.contact h1.title{
+    font-size: 70px;
+}
+.contact .content{
+    margin: 2vw;
+    margin-left: 7vw;
+    height: 90vh;
+}
+.contact .content p.text{
+    font-family: "Cormorant Infant", serif;
+    color: var(--sec-dark);
+    font-style: italic;
+    font-size: 32.5px;
+    font-weight: 550;
+
+}
+
+.contactlinks{
+    display: flex;
+    padding: 2vw;
+
+}
+.linkicon, .linktext{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.linktext{
+    gap: 2.5vh;
+}
+.linkicon{
+    width: 4vw;
+    margin-right: 2vw;
+    gap: 7vh;
+    justify-content: center;
+}
+.linkicon img{
+    filter: invert(12%) sepia(0%) saturate(0%) hue-rotate(175deg) brightness(97%) contrast(89%);
+    height: 70px;
+}
+.linktext h1{
+    margin-bottom: 0;
+    font-family: "Cormorant Infant", serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+.textinfo p{
+    margin-top: 0;
+    margin-left: 2vw;
+}
+.linktext .textinfo p.info a{
+    font-family: "Barlow", sans-serif;
+    font-weight: 20;
+    font-size: 24px;
+    font-style: italic;
+    color: var(--sec-dark);
+
 }
